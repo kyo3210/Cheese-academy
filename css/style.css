@@ -1,0 +1,964 @@
+/* ここから下に記載していく */
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+    scroll-padding-top: 200px;
+}
+
+body{
+    color: #222222;
+    font-family: sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #222222;
+    text-decoration: none;
+}
+
+/* ----------------------
+スマートフォン用
+----------------------- */
+@media screen and(max-width: 767px) {
+    /* ★スマホ用のCSS入れる！ */
+    #header{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    #header .logo{
+        max-width: 120px;
+    }
+}
+
+/* ----------------------
+ここから wrapperとheader部分
+----------------------- */
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+} 
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom:3px solid #bfbfbf;
+
+}
+
+#header .logo{
+    line-height:  0;
+} 
+
+#header .logo a{
+    display: block;
+}
+
+#header .navi{
+    display: flex;
+    align-items: center;
+}
+
+#header .navi li {
+    font-size: 21px;
+    margin-left: 50px;
+}
+
+
+.header_box {
+  position: fixed; /* ヘッダーを固定 */
+  top: 0; /* 上部に配置 */
+  left: 0; /* 左端に配置 */
+  width: 100%; /* 画面幅全体に広げる */
+  background-color: white; /* 背景色を設定 */
+  color: #fff; /* テキストの色を設定 */
+  padding: 0px 0px; /* 上下の余白と左右の余白を設定 */
+  z-index: 1000; /* 表示順序を設定 */
+}
+
+.wrapper{
+    position: relative;
+    }
+
+.mainvisual{
+    margin-top: 180px;
+    height: auto;
+}
+
+
+.main-thema{
+    white-space: nowrap;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.txt .thema01{
+    display: block;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.txt .thema02{
+    font-size: 32px;
+    color: white;
+    font-weight: lighter;
+}
+
+/* ここまでメイン */
+
+ここからABOUTセクション
+
+#ABOUT{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#ABOUT .ABOUT_box .title{
+    font-size: 24px;
+    color: #ffd61a;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#ABOUT .ABOUT_box .setsumei{
+    font-size: 18px;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px; 
+}
+
+#ABOUT .ABOUT_box .bun{
+    font-size: 16px;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; 
+    line-height: 1.6
+}
+
+#ABOUT .ABOUT_box .bun02{
+    font-size: 16px;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    line-height: 1.6
+}
+
+
+#ABOUT .gazou{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+/* ここまでABOUTセクション */
+
+/* ここからCOURSEセクション */
+
+#COURSE{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.title01{
+    font-size: 24px;
+    color: #222222;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.bun{
+    font-size: 16px;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    line-height: 1.6
+}
+
+.bun02{
+    font-size: 16px;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    line-height: 1.6
+}
+
+/* COURSE本格的な農園～の横並び画像 */
+
+  /* -- 一個目の箱 --*/
+
+.course_01{
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+        
+}
+  
+/* <!-- 左の画像 --> */
+.gazou01{
+    width: 50%;
+    display: flex;
+}
+
+.gazou01_img{
+    width: 100%; 
+       
+}
+
+/* <!-- 右のテキスト --> */
+
+.txt01{
+    width: 50%;
+}
+
+.txt-inner01{
+    width: 430px;
+    padding: 120px 0 120px 50px;
+}
+
+.title011{
+    font-size: 24px;
+    color: #222222;
+    font-weight: bold;
+    /* margin-bottom: 40px; */
+}
+
+.setsumei01{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 40px;
+}
+
+
+
+/* COURSE 必要な知識～の横並び画像 */
+  /* <!-- 二個目の箱 --> */
+
+.course_02{
+    max-width: 1200px;
+    background: #fafafa;
+    display: flex;
+}
+
+    /* <!-- 左のテキスト --> */
+.txt02{
+    width: 50%;
+
+}
+
+.txt-inner02{
+    padding: 120px 50px 120px 0;
+    margin-left: auto;   
+    width: 430px;
+}
+
+.title021{
+    font-size: 24px;
+    color: #222222;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.setsumei02{
+    font-size: 16px;
+    line-height: 1.6
+    
+}
+
+
+.gazou02{
+    width: 50%;
+    display: flex;
+}
+
+
+  /* <!-- 三個目の箱 --> */
+
+.course_03{
+    max-width: 1200px;
+    background: #fafafa;
+    display: flex;
+}
+
+    /* <!-- 左のテキスト --> */
+.txt03{
+    width: 50%;
+
+}
+
+.txt-inner03{
+    padding: 120px 0 120px 50px;
+    margin-right: auto;
+    width: 430px;
+}
+
+.title031{
+    font-size: 24px;
+    color: #222222;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.setsumei03{
+    font-size: 16px;
+    line-height: 1.6
+}
+
+.gazou03{
+    width: 50%;
+    display: flex;
+}
+
+
+/* ここまでCOURSEセクション */
+
+
+  /* <!-- ここからNEWSセクション --> */
+
+#NEWS{
+   max-width: 1200px;
+   text-align: center;
+    margin: 0 auto;
+
+}
+
+.NEWS_title{
+    font-size: 24px;
+    color: #ffd61a;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.NEWS_sub{
+    font-size: 18px;
+    color: #222222;
+    margin-bottom: 60px;
+}
+
+/* NEWSの3枚画像 */
+
+.NEWS_box{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+}
+
+.NEWS_txt{
+    line-height: 1.5;
+} 
+
+/* ホバー */
+/* 3つの画像のホバー */
+
+/* 3つのテキストボックスのホバー */
+.NEWS_gazou_1:hover {
+  color: #fff;
+  border:3px solid green;
+  background-color: #aec7e2;
+
+}
+
+.NEWS_gazou_2:hover {
+  color: #fff;
+  border:3px solid yellow;
+  background-color: #aec7e2;
+}
+
+.NEWS_gazou_3:hover {
+  color: #fff;
+  border:3px solid red;
+  background-color: #aec7e2;
+}
+
+/* ここまでホバー */
+
+/* <!-- MOREボタン --> */
+
+.MORE{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd61a;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    height: 60px;
+    box-shadow: 0px 5px 0px #f5ac4d;
+} 
+
+/*ーーーーーーーーーーーーーーー
+ ここからMOREボタンのツールチップ 
+ ーーーーーーーーーーーーーーーー*/
+
+/* カーソルを重ねる要素 */
+.btn {
+  position: relative; /* ツールチップの位置の基準に */
+  cursor: pointer; /* カーソルを当てたときにポインターに */
+}
+
+/* ツールチップのテキスト */
+.btn {
+    display: inline-block;
+    position: relative;
+}
+
+.btn > div {
+    cursor: pointer;
+}
+
+.btn > span {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .5em 1em;
+    border-radius: 3px;
+    background-color: #33d4cf;
+    color: #ffffff;
+    font-size: .7em;
+    white-space: nowrap;
+    transition: opacity .3s;
+}
+
+.btn > span::before {
+    position: absolute;
+    bottom: -6px;
+    width: 9px;
+    height: 6px;
+    background-color: inherit;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+}
+
+.btn:hover > span {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* ーーーーーーーーーーーーーーー
+ここまでMOREボタンのツールチップ 
+ーーーーーーーーーーーーーーーーー*/
+
+/* MOREボタンホバー */
+
+.button:hover {
+  color: #fff;
+  opacity: 0.7;
+  box-shadow: unset;
+  transform: translateY(4px);
+} 
+
+/* ここまでMOREボタンホバー */
+
+/* <!-- ここまでMOREボタン --> */
+
+
+/* <!-- ここからAccessの箱 -->  */
+
+#ACCESS{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    margin: 0 auto;
+
+    
+}
+
+.Access_title{
+    display: flex;
+    justify-content: center;
+    color: #222222;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.Access_sub{
+    display: flex;
+    justify-content: center;
+    color: #222222;
+    font-size: 18px;
+    margin-bottom: 60px;
+
+}
+
+/* ここからAcces地図埋め込み＋住所 */
+
+.map_box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.map{
+    max-width: 50%;
+}
+
+.jyusho{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.jyusho_wrap{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 120px  50px;
+}
+
+.jyusho_title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.jyusho_bun01{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.jyusho_bun02{
+    font-size: 20px;
+    margin-bottom: 60px;
+    line-height: 1.8;
+}
+
+/* ここまでAcces地図埋め込み＋住所 */
+
+/* <!-- ここからCONTACTの箱 --> */
+
+
+#CONTACT{
+    display: flex;
+    justify-content: center; 
+    margin-top: 60px;
+    margin-bottom: 30px; 
+}
+
+/* ここからCONTACTの文章 */
+
+.CONTACT_title{
+    display: flex;
+    justify-content: center;  
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.CONTACT_title01{
+    display: flex;
+    justify-content: center; 
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 60px; 
+    line-height: 1.6;
+}
+
+.CONTACT_title02{
+    display: flex;
+    justify-content: center; 
+    line-height: 1.6;
+}
+
+.CONTACT_title03{
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 30px; 
+    line-height: 1.6;
+}
+
+.CONTACT_title04{
+    display: flex;
+    justify-content: center; 
+    line-height: 1.6;
+}
+
+.CONTACT_title05{
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 70px; 
+    line-height: 1.6;
+}
+
+/* ここまでCONTACTの文章 */
+
+/* <!-- ここからお問合せフォーム --> */
+
+
+
+/* <!-- ここまでCONTACTの箱 --> */
+
+
+
+
+
+/*--------------------------
+ ここから地図のレスポンシブ対応 
+ ------------------------------*/
+
+.map {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9のアスペクト比 */
+    height: 0;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ここまで地図のレスポンシブ対応 */
+
+/* <!-- ここまでAccessの箱 -->  */
+
+
+/*お問合せフォーム*/
+
+#form_content{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.form_box{
+    max-width: 640px;
+}
+
+.form_box th {
+    text-align: left;
+    vertical-align:top; 
+}
+
+.label{
+  width:240px;
+  padding-right: 10px;
+  height: 36px;
+  display: flex;
+  align-items: center;  
+}
+
+.input{
+  width:328px;
+  height: 36px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* ここからフォームの各タイトルのdiv */
+/* フォーム名前 */
+.namae_box{    
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #bfbfbf;
+
+}
+
+.namae_label{
+    width: 240px;
+    height: 36px;
+    padding: 0 0 0 10px;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.namae_input{
+    border-left: 2px solid #bfbfbf;
+    padding: 0 0 0 10px;
+}
+
+/* フォームカナ */
+
+.kana_box{    
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #bfbfbf;
+
+}
+
+.kana_label{
+    width: 240px;
+    height: 36px;
+    padding: 0 0 0 10px;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.kana_input{
+    border-left: 2px solid #bfbfbf;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+}
+
+/* フォームmail */
+
+.mail_box{    
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #bfbfbf;
+
+}
+
+.mail_label{
+    width: 240px;
+    height: 36px;
+    padding: 0 0 0 10px;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.mail_input{
+    border-left: 2px solid #bfbfbf;
+    padding: 0 0 0 10px;
+}
+
+/* フォームきっかけ */
+
+.kikkake_box{    
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #bfbfbf;
+
+}
+
+.kikkake_label{
+    width: 240px;
+    height: 36px;
+    padding: 0 0 0 10px;
+    align-items: center;
+}
+
+.kikkake{
+    padding: 0 0 0 10px;
+    border-left: 2px solid #bfbfbf;
+}
+
+
+
+/* セレクトbox */
+
+.selectbox{
+    height: 36px;
+    border-left: 2px solid #bfbfbf;
+    padding: 0 0 0 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+
+.selectbox::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #535353;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox select {
+    appearance: none;
+    max-width: 300px;
+    height: 2.8em;
+    padding: .4em calc(.8em + 30px) .4em .8em;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/*ここまでセレクトbox  */
+
+
+/* フォーム志望動機 */
+
+.douki_box{    
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #bfbfbf;
+}
+
+.douki_label{
+    width: 240px;
+    height: 36px;
+    padding: 0 0 0 10px;
+    align-items: center;
+}
+
+.douki_input{
+    border-left: 2px solid #bfbfbf;
+    padding: 0 0 0 10px;
+    line-height: 30px;
+    white-space: nowrap;
+    font-size: 16px;
+
+}
+
+.douki_input01{
+    margin-top: 8px;
+}
+
+.douki_input04{
+    margin-bottom:  8px;
+}
+
+/* ここまで志望動機 */
+
+
+/* ここから詳細 */
+
+.syosai_box{    
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #bfbfbf;
+    border-bottom: 2px solid #bfbfbf;
+}
+
+.syosai_label{
+    width: 240px;
+    height: 300px;
+    padding: 0 0 0 10px;
+    align-items: center;
+
+}
+
+.syosai_input{
+    border-left: 2px solid #bfbfbf;
+    padding: 0 0 0 10px;
+}
+
+textarea {
+  resize: vertical;
+  width:328px;
+  height:100px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* ここまで詳細 */
+
+
+/* <!-- ここまでフォーム --> */
+
+
+/* <!-- ここから送信ボタン --> */
+
+.sosin{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 140px;
+}
+
+
+.sosin_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd61a;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    height: 60px;
+    box-shadow: 0px 5px 0px #f5ac4d;
+} 
+
+
+/* 送信ボタンホバー */
+
+.sosin_btn:hover {
+  color: #fff;
+  opacity: 0.7;
+  box-shadow: unset;
+  transform: translateY(4px);
+} 
+
+
+/* <!-- ここまで送信ボタン --> */
+
+/* ここからフッター */
+
+.footer{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #707070;
+}
+
+.footer_title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #707070;
+    color: white;
+}
+
+/* ここまでフッター */

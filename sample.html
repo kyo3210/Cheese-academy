@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>授業風景</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style_sample.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9比率の維持 */
+            height: 0;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+<!-- <div class="cheese_gazou">
+    <video src="./img/20251107_2231_01k9f86a7gf76bhs5kv2z041q2.mp4" controls muted></video>
+</div>   -->
+
+<video class="video" src="./img/20251107_2231_01k9f86a7gf76bhs5kv2z041q2.mp4" controls muted></video>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+html{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+ 
+body{
+    width: 400px;
+}
+
+
+.video {
+    width: 100%;
+}
